@@ -29,18 +29,21 @@
 
 
 
-// //????????????????????????????????????????
-// for (let i = 2; i < 10; i++){
+// // //????????????????????????????????????????
+// let prNum = [];
+// for (let i = 2; i < 10; i++) {
 //     let count = 0;
-//     for (let j = 2; j < i; j++)
-//     if(i % j == 0){
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) {
+//             count++;
+//         }
 //     }
-//     else {
-//         count++;
+//     if (count == 0){
+//     prNum.push(i);
 //     }
-//     console.log(`Prime number - ${i}`)
-//     console.log(count)
 // }
+// console.log(`Prime number - ${prNum}`)
+// console.log(count)
 
 // <!-- Easy: -->
 // ### Задача 1
@@ -83,14 +86,14 @@
 // чисел, которые делятся и на 3 и на 5.
 
 // for(let i = 1; i <=100; i++){
-//     if (i % 3 == 0){
+//     if (i % 3 == 0 && i % 5 == 0){
+//         console.log("FizzBuzz" + i);
+//     }
+//     else if (i % 3 == 0){
 //         console.log("Fizz" + i);
 //     }
 //     else if (i % 5 == 0){
 //         console.log("Buzz" + i);
-//     }
-//     else if (i % 3 == 0 && i % 5 == 0){
-//         console.log("FizzBuzz" + i);
 //     }
 //     else{
 //         console.log("Ordinary" + i);
@@ -99,22 +102,23 @@
 
 // ### Задача 4
 // Даны числа 4, -2, 5, 19, -130, 0, 10, 200, -30. Найдите минимальное и максимальное число.
- 
+
 // let numbers = [4, -2, 5, 19, -130, 0, 10, 200, -30];
 // for (var i = 0; i < numbers.length; i++) {
 //     if(numbers[i] > numbers[0]){
 //         numbers[0] = numbers[i];
+//         console.log(numbers[0]);
 //     }
 // }
 // alert(numbers[0]);
+// alert(numbers.length);
+// console.log(numbers);
 
-// let numbers = [4, -2, 5, 19, -130, 0, 10, 200, -30];
+// let numbers = [4, -2, 5, 19, -130, 0, 10, 200, -300];
 // for (var i = 0; i < numbers.length; i++) {
 //     if(numbers[i] < numbers[0]){
 //         numbers[0] = numbers[i];
+//         console.log(numbers[0]);
 //     }
 // }
 // alert(numbers[0]);
- 
-
-
