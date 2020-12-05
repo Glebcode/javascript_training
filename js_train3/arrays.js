@@ -40,3 +40,23 @@
 // console.log(styles);
 
 
+let arr = ["Я", "изучаю", "JavaScript", '12', '05', 2020];
+
+arr.splice(4, 1);
+let arr2 = arr.slice(1);
+console.log('arr2', arr2);
+console.log('arr1', arr);
+
+let arr3 = arr.concat(arr2);
+console.log("🚀 ~ file: arrays.js ~ line 51 ~ arr3", arr3);
+let num = arr.indexOf('Я');
+console.log("🚀 ~ file: arrays.js ~ line 53 ~ example", num);
+
+
+let str = "тест";
+let str2 = "JavaScript";
+
+console.log( str.split('') );
+console.log( str2.split('', 4).join('') );
+console.log( str.split('').reverse() );
+console.log( str.split('').reverse().join('') );
